@@ -1,0 +1,81 @@
+.TableContainer{
+    width: 100vw;
+    overflow: scroll;
+}
+.styled-table {
+    height: 75vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    padding: 10px;
+    box-shadow: 0 0 25px 0 rgba(149, 86, 86, 0.4);
+    border-radius: 10px;
+    text-align: center;
+    overflow: scroll;
+    width: 300%;
+  }
+
+
+  .Body{
+    overflow: hidden;
+  }
+
+  .styled-table thead tr th {
+    text-align: left;
+    padding: 10px;
+    font-weight: 600;
+    background: #8a8a8a;
+    color: #fff;
+    border-bottom: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+  }
+  
+  .styled-table tbody tr td {
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+    border-right: 1px solid #dee2e6;
+    background: #f9f9f9;
+    color: #333;
+  }
+  
+  .btn-edit {
+    background-color: #2f75c1;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 5px;
+    float:inline-end;
+    text-decoration: none;
+  }
+  
+  .btn-delete {
+    background-color: #c12c3b;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 5px;
+    float:inline-start;
+    text-decoration: none;
+  }
+
+  .btn-view{
+    background-color: #9f9798;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 5px;
+    float:inline-start;
+    text-decoration: none;
+  }
+  
+  .styled-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
