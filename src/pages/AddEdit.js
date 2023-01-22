@@ -26,7 +26,7 @@ const AddEdit = () =>{
 
     // only run when we have the fname (user is updating the existing contact)
     useEffect(() => {
-        axios.get(`http://localhost:5000/api/get/${Fname}`)
+        axios.get(`https://west-central.herokuapp.com/api/get/${Fname}`)
         .then((resp) => setState({...resp.data[0]}))
     }, [Fname])
    
@@ -36,7 +36,7 @@ const AddEdit = () =>{
             alert("please provide value for First Name");
         } else{
             
-        axios.post("http://localhost:5000/api/post",{
+        axios.post("https://west-central.herokuapp.com/api/post",{
             fname,lname,org,position,phone,Other_phone,email,WC_resident,notes,Allow_photos,Want_info,Fallows_conversation,
             durrett_mtg,boone_St_bash,wcdp,racial_Justice,Heart,youth,hobbies,skill_to_Share,address,neighbor_day_BA
         })

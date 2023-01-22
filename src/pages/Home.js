@@ -12,7 +12,7 @@ const Home = () => {
     // using async for api 
     // http://localhost:5000/api/get - backend API
     const loadData = async () => {
-        const response = await axios.get("http://localhost:5000/api/get");
+        const response = await axios.get("https://west-central.herokuapp.com/api/get");
         setData(response.data);
     };
 
@@ -24,17 +24,17 @@ const Home = () => {
     }, []);
 
     const deleteContact = (Fname) => {
-        if(window.confirm("Are you sure you wanted to delete this contact?")) {
-            axios.delete(`http://localhost:5000/api/remove/${Fname}`);
+        if(window.confirm(`Are you sure you wanted to delete ${Fname}'s Contact?`)) {
+            axios.delete(`https://west-central.herokuapp.com/api/remove/${Fname}`);
             alert("Contact deleted successfully");
             setTimeout(() => loadData(), 500);
         }
     }
     return(
         <div className='Body' style={{marginTop: "15px"}}>
-            <h1> West Central  Contacts</h1>
+            <h1 className='WestCentralHeading'> West Central  Contacts</h1>
             <Link to="/addContact">
-                <button className='btn btn-contact'>Add Contact</button>
+                <button type='AddNewContact'>Add a New Contact</button>
             </Link>
             <div className='TableContainer'>
                 <div className="styled-table">

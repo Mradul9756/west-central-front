@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import AddEdit from "./pages/AddEdit";
 import Home from "./pages/Home.js";
+import View from "./pages/View.js"
 
 // register the route to home (use switch)
 function App() {
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home/>} />
             <Route path="/addContact" element={<AddEdit/>} />
             <Route path="/update/:Fname" element={<AddEdit/>} />
+            <Route path="/view/:Fname" element={<View/>} />
          </Routes>
       </div>
     </Router>
